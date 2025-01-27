@@ -1,0 +1,20 @@
+# General Aliases
+alias grep="grep --color=auto" 
+alias diff="diff --color=auto" 
+alias rm="rm -ri"
+alias mv="mv -i"
+alias vim="nvim"
+# alias ls="ls -lah --color=auto" 
+alias df='df -h'  
+alias free='free -m'
+alias kchrome="ps -e | rg chrom | awk '{print $1}' | xargs kill -9"
+
+# Git Aliases
+# alias gpush="git push"
+# alias gpull="git pull"
+alias gc="git commit -m"
+# alias gcko="git checkout"
+alias gadd="git add ."
+alias gadog='PAGER="less -F -X" git adog'
+alias glog='PAGER="less -F -X" git log'
+alias gbranch="git branch"
