@@ -1,6 +1,23 @@
 # Table of contents
 - [GNU Stow](/docs/stow.md)
 
+# Initial Script
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo >> /Users/quangnguyen/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/quangnguyen/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+brew install git
+brew install --cask visual-studio-code
+brew install --cask google-drive
+brew install --cask uhk-agent
+brew install --cask telegram
+brew install --cask rider
+brew install --cask karabiner-elements
+```
+
+
 # For Windows users
 On Windows, you can create a junction using `mklink`. To create a link for an **individual file**, use `mklink /H`:
 ```
