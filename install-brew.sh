@@ -5,8 +5,8 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install nvm
-brew install commitizen
 nvm install 20
+brew install commitizen
 npm install -g cz-conventional-changelog
 npm install -g devmoji
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
