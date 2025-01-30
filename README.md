@@ -3,20 +3,8 @@
 
 # Initial Script
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo >> /Users/quangnguyen/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/quangnguyen/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-brew install git
-brew install stow
-brew install --cask font-meslo-for-powerlevel10k
-brew install --cask visual-studio-code
-brew install --cask google-drive
-brew install --cask uhk-agent
-brew install --cask telegram
-brew install --cask rider
-brew install --cask karabiner-elements
+chmod +x init.sh
+chmod +x install-brew.sh
 ```
 
 
