@@ -4,6 +4,7 @@
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+brew install nvm
 brew install stow
 stow .
 brew install --cask google-chrome
