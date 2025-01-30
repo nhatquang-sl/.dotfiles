@@ -913,7 +913,7 @@
                         ]
                     },
                     {
-                        "description": "CtrlCommand: control + [z, x, c, v, b, n, m, ',', '.'] to Command",
+                        "description": "CtrlCommand: control + [z, x, b, n, m, ',', '.'] to Command",
                         "manipulators": [
                             {
                                 "from": {
@@ -942,47 +942,6 @@
                                 "to": [
                                     {
                                         "key_code": "x",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.apple.Terminal",
-                                            "com.googlecode.iterm2"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "c",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "v",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "v",
                                         "modifiers": ["left_command"]
                                     }
                                 ],
