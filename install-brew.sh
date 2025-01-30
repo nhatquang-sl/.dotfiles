@@ -8,6 +8,7 @@ brew install nvm
 brew install commitizen
 nvm install 20
 npm install -g cz-conventional-changelog
+npm install -g devmoji
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 brew install stow
 stow .
