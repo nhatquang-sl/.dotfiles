@@ -23,3 +23,5 @@ _darcs
 ^/COPYING
 
 /docs
+init.sh
+install-brew.sh
