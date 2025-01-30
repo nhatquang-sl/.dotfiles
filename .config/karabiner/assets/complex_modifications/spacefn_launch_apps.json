@@ -1,0 +1,154 @@
+{
+    "title": "SpaceFN Launch Apps",
+    "rules": [
+        {
+            "description": "SpaceFN Launch Apps: Space+[1, 2, 3, 4, 5, 6, 7, 9] to Launch VSCode, Chrome, Rider, Terminal, Slack, Postman, QuickTime Player, Zalo",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "1"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open '/Applications/Visual Studio Code.app'"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "spacefn_mode",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "2"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open '/Applications/Google Chrome.app'"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "spacefn_mode",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "3"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open '/Applications/Rider.app'"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "spacefn_mode",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "4"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open '/Applications/iTerm.app'"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "spacefn_mode",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "5"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open '/Applications/Slack.app'"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "spacefn_mode",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "6"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open '/Applications/Postman.app'"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "spacefn_mode",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "7"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open '/Applications/QuickTime\\ Player.app'"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "spacefn_mode",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "9"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open '/Applications/Zalo.app'"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "spacefn_mode",
+                            "value": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
