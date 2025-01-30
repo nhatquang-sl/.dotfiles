@@ -35,14 +35,3 @@ echo "Successfully modified /etc/zshenv. The content is as follows:"
 cat "$ZSHENV_PATH"
 
 echo "To apply the changes, restart your terminal or run 'source /etc/zshenv'."
-
-
-brew install git
-brew install stow
-brew install --cask font-meslo-for-powerlevel10k
-brew install --cask visual-studio-code
-brew install --cask google-drive
-brew install --cask uhk-agent
-brew install --cask telegram
-brew install --cask rider
-brew install --cask karabiner-elements
