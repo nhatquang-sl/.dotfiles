@@ -15,3 +15,5 @@ brew install --cask uhk-agent
 brew install --cask telegram
 brew install --cask rider
 brew install --cask karabiner-elements
+
+nvm install 20

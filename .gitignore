@@ -3,3 +3,6 @@
 .config/zsh/.zsh_sessions
 **/.zsh_history
 **/.zcompdump
+.nvm/.cache
+.nvm/alias
+.nvm/versions
