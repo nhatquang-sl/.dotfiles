@@ -8,8 +8,8 @@ brew install nvm
 nvm install 20
 brew install commitizen
 npm install -g cz-conventional-changelog
-echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
-npm install -g devmoji
+npm install -g cz-emoji-conventional
+echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
 brew install stow
 stow .
 brew install --cask google-chrome
