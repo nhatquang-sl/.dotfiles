@@ -9,6 +9,8 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/quangnguyen/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install git
+brew install stow
+brew install --cask font-meslo-for-powerlevel10k
 brew install --cask visual-studio-code
 brew install --cask google-drive
 brew install --cask uhk-agent
