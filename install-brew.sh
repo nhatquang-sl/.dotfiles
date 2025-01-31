@@ -4,14 +4,19 @@
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# keep order for this session to install nvm
+# because nvm need to link .nvm folder
 brew install nvm
+brew install stow
+stow .
 nvm install 20
-brew install commitizen
+npm install -g commitizen
 npm install -g cz-conventional-changelog
 npm install -g cz-emoji-conventional
 echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
-brew install stow
-stow .
+
+
+# no need order for this applications
 brew install --cask karabiner-elements
 brew install --cask visual-studio-code
 brew install --cask font-meslo-for-powerlevel10k
