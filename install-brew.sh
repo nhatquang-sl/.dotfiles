@@ -20,6 +20,7 @@ echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
 brew install --cask karabiner-elements
 brew install --cask visual-studio-code
 brew install --cask font-meslo-for-powerlevel10k
+brew install --cask iterm2
 brew install --cask google-chrome
 brew install --cask google-drive
 brew install --cask uhk-agent
