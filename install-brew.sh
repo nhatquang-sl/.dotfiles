@@ -26,3 +26,5 @@ brew install --cask google-drive
 brew install --cask uhk-agent
 brew install --cask telegram
 brew install --cask rider
+brew install mas
+mas install 1544620654 # Clipboard Manager — Pasty
