@@ -12,11 +12,11 @@ npm install -g cz-emoji-conventional
 echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
 brew install stow
 stow .
-brew install --cask google-chrome
-brew install --cask font-meslo-for-powerlevel10k
+brew install --cask karabiner-elements
 brew install --cask visual-studio-code
+brew install --cask font-meslo-for-powerlevel10k
+brew install --cask google-chrome
 brew install --cask google-drive
 brew install --cask uhk-agent
 brew install --cask telegram
 brew install --cask rider
-brew install --cask karabiner-elements
