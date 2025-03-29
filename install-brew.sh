@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -26,6 +26,9 @@ brew install --cask google-drive
 brew install --cask uhk-agent
 brew install --cask telegram
 brew install --cask rider
-brew install openvpn
+brew install --cask openvpn-connect
+brew install --cask adobe-acrobat-reader
+brew install --cask vlc
+brew install mpv
 brew install mas
 mas install 1544620654 # Clipboard Manager — Pasty

@@ -53,3 +53,7 @@ source ${ZDOTDIR}/git-cmds/gpushforce.zsh
 # source D:/QN.Expenditure/scripts/qndbinit.zsh
 # source D:/QN.Expenditure/scripts/qndbremove.zsh
 # source D:/QN.Expenditure/scripts/qndbupdate.zsh
+
+
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
