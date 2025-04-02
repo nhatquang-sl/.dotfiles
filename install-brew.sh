@@ -32,3 +32,4 @@ brew install --cask vlc
 brew install mpv
 brew install mas
 mas install 1544620654 # Clipboard Manager — Pasty
+brew install docker

@@ -50,10 +50,11 @@ source ${ZDOTDIR}/git-cmds/gpull.zsh
 source ${ZDOTDIR}/git-cmds/gpush.zsh
 source ${ZDOTDIR}/git-cmds/gpushforce.zsh
 source ${ZDOTDIR}/git-cmds/gtagnew.zsh
+source ${ZDOTDIR}/git-cmds/gtagdelete.zsh
 # source D:/QN.Expenditure/scripts/qnapiclientgenerate.zsh
 # source D:/QN.Expenditure/scripts/qndbinit.zsh
 # source D:/QN.Expenditure/scripts/qndbremove.zsh
-# source D:/QN.Expenditure/scripts/qndbupdate.zsh
+source ~/QN.Expenditure/scripts/.zshrc
 
 
 export DOTNET_ROOT=$HOME/.dotnet

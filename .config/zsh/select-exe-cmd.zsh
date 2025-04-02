@@ -97,6 +97,15 @@ selectExeCmd() {
             read -s -k 1 var_name
             userInput=""
             clear
+
+
+            branches=()
+            while IFS= read -r branch; do
+                branches+=("$branch")
+                # echo $branch
+            done < <(eval "$CmdStr")
+            branches+=("")
+            matchedOptionIndices=$(selectOptions "${branches[@]}" $userInput $selectedIndex)
         fi
 
         if [[ ${#matchedOptionIndices[@]} -gt 0 ]]; then
