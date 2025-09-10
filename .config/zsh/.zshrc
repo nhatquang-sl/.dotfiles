@@ -46,9 +46,12 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 source ${ZDOTDIR}/select-exe-cmd.zsh
 source ${ZDOTDIR}/git-cmds/gcko.zsh
 source ${ZDOTDIR}/git-cmds/gckonew.zsh
+source ${ZDOTDIR}/git-cmds/gdelete.zsh
+source ${ZDOTDIR}/git-cmds/gdeleteserver.zsh
 source ${ZDOTDIR}/git-cmds/gpull.zsh
 source ${ZDOTDIR}/git-cmds/gpush.zsh
 source ${ZDOTDIR}/git-cmds/gpushforce.zsh
+source ${ZDOTDIR}/git-cmds/grename.zsh
 source ${ZDOTDIR}/git-cmds/gtagnew.zsh
 source ${ZDOTDIR}/git-cmds/gtagdelete.zsh
 
