@@ -15,6 +15,8 @@ npm install -g cz-conventional-changelog
 npm install -g cz-emoji-conventional
 echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
 
+brew install git
+
 
 # no need order for this applications
 brew install --cask karabiner-elements
@@ -28,8 +30,7 @@ brew install --cask telegram
 brew install --cask rider
 brew install --cask openvpn-connect
 brew install --cask adobe-acrobat-reader
-brew install --cask vlc
-brew install mpv
+brew install --cask elmedia-player
 brew install mas
 mas install 1544620654 # Clipboard Manager — Pasty
 brew install docker
