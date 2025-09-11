@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 1) Stop any Brew-backed services
 brew services stop --all 2>/dev/null || true
 
