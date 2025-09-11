@@ -1,7 +1,7 @@
 #!/bin/bash
+# brew install git
 
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # keep order for this session to install nvm
@@ -9,13 +9,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install nvm
 brew install stow
 stow .
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 nvm install 20
 npm install -g commitizen
 npm install -g cz-conventional-changelog
 npm install -g cz-emoji-conventional
 echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
 
-brew install git
 
 
 # no need order for this applications
