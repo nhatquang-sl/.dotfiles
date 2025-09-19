@@ -21,16 +21,20 @@ echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
 
 # no need order for this applications
 brew install --cask karabiner-elements
+brew install --cask google-chrome
+brew install --cask google-drive
+brew install --cask openvpn-connect
+brew install --cask adobe-acrobat-reader
 brew install --cask visual-studio-code
 brew install --cask font-meslo-for-powerlevel10k
 brew install --cask iterm2
-brew install --cask google-chrome
-brew install --cask google-drive
+
+
 brew install --cask uhk-agent
 brew install --cask telegram
 brew install --cask rider
-brew install --cask openvpn-connect
-brew install --cask adobe-acrobat-reader
+
+
 brew install --cask elmedia-player
 brew install mas
 mas install 1544620654 # Clipboard Manager — Pasty
