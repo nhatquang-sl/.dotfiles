@@ -6,3 +6,4 @@ chmod 600 ~/.ssh/root_contabo
 
 git config --global user.name "Quang Nguyen"
 git config --global user.email "quang.sunlight@gmail.com"
+git config pull.rebase false
