@@ -979,6 +979,14 @@
               {
                 "type": "basic",
                 "from": {
+                  "key_code": "0",
+                  "modifiers": { "mandatory": ["control"] }
+                },
+                "to": [{ "shell_command": "open -b com.eltima.elmedia6.mas" }]
+              },
+              {
+                "type": "basic",
+                "from": {
                   "key_code": "hyphen",
                   "modifiers": { "mandatory": ["control", "command"] }
                 },

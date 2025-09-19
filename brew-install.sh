@@ -32,6 +32,7 @@ brew install --cask rider
 brew install --cask openvpn-connect
 brew install --cask adobe-acrobat-reader
 brew install --cask elmedia-player
+brew install --cask obs
 brew install mas
 mas install 1544620654 # Clipboard Manager — Pasty
 brew install docker
