@@ -15,16 +15,11 @@ npm install -g cz-conventional-changelog
 npm install -g cz-emoji-conventional
 echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
 
-
-
 # no need order for this applications
 brew install --cask karabiner-elements google-chrome google-drive openvpn-connect adobe-acrobat-reader
-
 brew install --cask visual-studio-code
 brew install --cask font-meslo-for-powerlevel10k
 brew install --cask iterm2
-
-
 brew install --cask uhk-agent
 brew install --cask telegram
 brew install --cask rider
