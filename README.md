@@ -3,7 +3,7 @@
 
 # Initial Script
 ```
-chmod +x init.sh install-brew.sh
+chmod +x ssh-init.sh brew-install.sh zsh-init.sh
 ```
 
 
