@@ -275,6 +275,66 @@
             ]
           },
           {
+            "description": "sfn",
+            "manipulators": [
+              {
+                "conditions": [
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "s", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "left_arrow", "modifiers": ["control"] }],
+                "type": "basic"
+              },
+              {
+                "conditions": [{ "name": "caps_lock_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "s", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "left_arrow", "modifiers": ["control", "option"] }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "ffn",
+            "manipulators": [
+              {
+                "conditions": [
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "f", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "right_arrow", "modifiers": ["control"] }],
+                "type": "basic"
+              },
+              {
+                "conditions": [{ "name": "caps_lock_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "f", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "right_arrow", "modifiers": ["control", "option"] }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "efn",
+            "manipulators": [
+              {
+                "conditions": [
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "e", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "up_arrow", "modifiers": ["control"] }],
+                "type": "basic"
+              },
+              {
+                "conditions": [{ "name": "caps_lock_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "e", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "up_arrow", "modifiers": ["control", "option"] }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "jfn",
             "manipulators": [
               {
@@ -283,7 +343,7 @@
                   { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
                 ],
                 "from": { "key_code": "j", "modifiers": { "optional": ["any"] } },
-                "to": [{ "key_code": "left_arrow", "modifiers": ["control", "option"] }],
+                "to": [{ "key_code": "left_arrow", "modifiers": ["option"] }],
                 "type": "basic"
               },
               {
@@ -309,7 +369,7 @@
                   { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
                 ],
                 "from": { "key_code": "l", "modifiers": { "optional": ["any"] } },
-                "to": [{ "key_code": "right_arrow", "modifiers": ["control", "option"] }],
+                "to": [{ "key_code": "right_arrow", "modifiers": ["option"] }],
                 "type": "basic"
               },
               {
@@ -330,24 +390,9 @@
             "description": "ifn",
             "manipulators": [
               {
-                "conditions": [
-                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
-                  { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
-                ],
-                "from": { "key_code": "i", "modifiers": { "optional": ["any"] } },
-                "to": [{ "key_code": "up_arrow", "modifiers": ["control", "option"] }],
-                "type": "basic"
-              },
-              {
                 "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
                 "from": { "key_code": "i", "modifiers": { "optional": ["any"] } },
                 "to": [{ "key_code": "up_arrow" }],
-                "type": "basic"
-              },
-              {
-                "conditions": [{ "name": "caps_lock_mode", "type": "variable_if", "value": 1 }],
-                "from": { "key_code": "i", "modifiers": { "optional": ["any"] } },
-                "to": [{ "key_code": "up_arrow", "modifiers": ["control"] }],
                 "type": "basic"
               }
             ]
@@ -370,46 +415,41 @@
             ]
           },
           {
-            "description": "SpaceFN: Space+[uo] to option + Left, Down",
+            "description": "ufn",
             "manipulators": [
               {
                 "conditions": [
-                  {
-                    "name": "spacefn_mode",
-                    "type": "variable_if",
-                    "value": 1
-                  }
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
                 ],
-                "from": {
-                  "key_code": "u",
-                  "modifiers": { "optional": ["any"] }
-                },
-                "to": [
-                  {
-                    "key_code": "left_arrow",
-                    "modifiers": ["command"]
-                  }
-                ],
+                "from": { "key_code": "u", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "left_arrow", "modifiers": ["command", "option"] }],
                 "type": "basic"
               },
               {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "u", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "left_arrow", "modifiers": ["command"] }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "ofn",
+            "manipulators": [
+              {
                 "conditions": [
-                  {
-                    "name": "spacefn_mode",
-                    "type": "variable_if",
-                    "value": 1
-                  }
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
                 ],
-                "from": {
-                  "key_code": "o",
-                  "modifiers": { "optional": ["any"] }
-                },
-                "to": [
-                  {
-                    "key_code": "right_arrow",
-                    "modifiers": ["command"]
-                  }
-                ],
+                "from": { "key_code": "o", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "right_arrow", "modifiers": ["command", "option"] }],
+                "type": "basic"
+              },
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "o", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "right_arrow", "modifiers": ["command"] }],
                 "type": "basic"
               }
             ]
@@ -520,6 +560,17 @@
                     "modifiers": ["option"]
                   }
                 ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "screenshot [fn",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "open_bracket" },
+                "to": [{ "key_code": "5", "modifiers": ["command", "shift"] }],
                 "type": "basic"
               }
             ]
