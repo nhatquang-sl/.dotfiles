@@ -191,10 +191,10 @@
                   "key_code": "0",
                   "modifiers": { "mandatory": ["control"] }
                 },
-                "to": [{ "shell_command": "open -b com.eltima.elmedia6.mas" }]
+                "to": [{ "shell_command": "open -b com.eltima.elmedia6.mas" }],
+                "type": "basic"
               },
               {
-                "type": "basic",
                 "from": {
                   "key_code": "hyphen",
                   "modifiers": { "mandatory": ["control", "command"] }
@@ -608,6 +608,28 @@
                     "shell_command": "open -b org.telegram.desktop || open -b ru.keepcoder.Telegram || open -a 'Telegram' || open -a 'Telegram Desktop' || open -a 'Telegram Lite'"
                   }
                 ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "9fn",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "9" },
+                "to": [{ "shell_command": "open -b com.adobe.Acrobat.Pro" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "0fn",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "0" },
+                "to": [{ "shell_command": "open -b com.eltima.elmedia6.mas" }],
                 "type": "basic"
               }
             ]
