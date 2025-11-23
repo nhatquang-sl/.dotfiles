@@ -6,3 +6,7 @@
 .nvm/.cache
 .nvm/alias
 .nvm/versions
+
+.config/colima
+.config/configstore
+.config/github-copilot

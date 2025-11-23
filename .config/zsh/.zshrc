@@ -59,7 +59,7 @@ source ${ZDOTDIR}/git-cmds/gtagdelete.zsh
 
 export QNEDIR="D:/QN.Expenditure"
 if [[ $(uname) == "Darwin" ]]; then
-    export QNEDIR="/Users/quang/QN.Expenditure"
+    export QNEDIR="/Users/quang/workspace/QN.Expenditure"
 fi
 source ${QNEDIR}/scripts/.zshrc
 

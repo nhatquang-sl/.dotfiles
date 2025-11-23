@@ -315,6 +315,17 @@
             ]
           },
           {
+            "description": "qn",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "q", "modifiers": { "optional": ["any"] } },
+                "to": [{ "key_code": "w", "modifiers": ["command", "shift"] }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "wfn",
             "manipulators": [
               {
@@ -412,6 +423,15 @@
             "description": "ifn",
             "manipulators": [
               {
+                "conditions": [
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "i" },
+                "to": [{ "key_code": "up_arrow", "modifiers": ["shift", "option"] }],
+                "type": "basic"
+              },
+              {
                 "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
                 "from": { "key_code": "i", "modifiers": { "optional": ["any"] } },
                 "to": [{ "key_code": "up_arrow" }],
@@ -422,6 +442,15 @@
           {
             "description": "kfn",
             "manipulators": [
+              {
+                "conditions": [
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "k" },
+                "to": [{ "key_code": "down_arrow", "modifiers": ["shift", "option"] }],
+                "type": "basic"
+              },
               {
                 "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
                 "from": { "key_code": "k", "modifiers": { "optional": ["any"] } },
@@ -445,7 +474,7 @@
                   { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
                 ],
                 "from": { "key_code": "u", "modifiers": { "optional": ["any"] } },
-                "to": [{ "key_code": "left_arrow", "modifiers": ["command", "option"] }],
+                "to": [{ "key_code": "left_arrow", "modifiers": ["command", "shift"] }],
                 "type": "basic"
               },
               {
@@ -465,7 +494,7 @@
                   { "name": "caps_lock_mode", "type": "variable_if", "value": 1 }
                 ],
                 "from": { "key_code": "o", "modifiers": { "optional": ["any"] } },
-                "to": [{ "key_code": "right_arrow", "modifiers": ["command", "option"] }],
+                "to": [{ "key_code": "right_arrow", "modifiers": ["command", "shift"] }],
                 "type": "basic"
               },
               {
@@ -594,11 +623,81 @@
                 "from": { "key_code": "open_bracket" },
                 "to": [{ "key_code": "5", "modifiers": ["command", "shift"] }],
                 "type": "basic"
+              },
+              {
+                "conditions": [{ "name": "caps_lock_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "open_bracket" },
+                "to": [{ "key_code": "open_bracket", "modifiers": ["left_shift", "left_command"] }],
+                "type": "basic"
               }
             ]
           },
           {
-            "description": "screenshot 6fn",
+            "description": "]fn",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "caps_lock_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "close_bracket" },
+                "to": [
+                  { "key_code": "close_bracket", "modifiers": ["left_shift", "left_command"] }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "`fn",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": {
+                  "key_code": "grave_accent_and_tilde",
+                  "modifiers": { "optional": ["any"] }
+                },
+                "to": [{ "key_code": "grave_accent_and_tilde", "modifiers": ["control"] }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "5fn",
+            "manipulators": [
+              {
+                "conditions": [
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.jetbrains\\.rider$",
+                      "^com\\.jetbrains\\.rider-EAP$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": { "key_code": "5" },
+                "to": [
+                  { "key_code": "grave_accent_and_tilde", "modifiers": ["command"], "repeat": true }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.jetbrains\\.rider$",
+                      "^com\\.jetbrains\\.rider-EAP$"
+                    ],
+                    "type": "frontmost_application_unless"
+                  }
+                ],
+                "from": { "key_code": "5" },
+                "to": [{ "shell_command": "open -b com.jetbrains.rider || open -a 'Rider'" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "6fn",
             "manipulators": [
               {
                 "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
@@ -608,6 +707,17 @@
                     "shell_command": "open -b org.telegram.desktop || open -b ru.keepcoder.Telegram || open -a 'Telegram' || open -a 'Telegram Desktop' || open -a 'Telegram Lite'"
                   }
                 ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "8fn",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "8" },
+                "to": [{ "shell_command": "open -b com.postmanlabs.mac" }],
                 "type": "basic"
               }
             ]
@@ -629,7 +739,7 @@
               {
                 "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
                 "from": { "key_code": "0" },
-                "to": [{ "shell_command": "open -b com.eltima.elmedia6.mas" }],
+                "to": [{ "shell_command": "open -b com.Eltima.ElmediaPlayer" }],
                 "type": "basic"
               }
             ]
@@ -760,6 +870,28 @@
                 ],
                 "from": { "key_code": "4" },
                 "to": [{ "shell_command": "open -a iTerm || open -a 'iTerm 2'" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "-",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "hyphen" },
+                "to": [{ "shell_command": "open -a Finder" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "deletefn",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "delete_or_backspace" },
+                "to": [{ "key_code": "delete_or_backspace", "modifiers": ["command"] }],
                 "type": "basic"
               }
             ]
