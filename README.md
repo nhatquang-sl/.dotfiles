@@ -1,6 +1,9 @@
 # Table of contents
 - [GNU Stow](/docs/stow.md)
 
+# Clone
+- From the root folder `~`, run `git pull --recurse-submodules`.
+
 # Initial Script
 ```
 chmod +x ssh-init.sh brew-install.sh zsh-init.sh
