@@ -663,35 +663,13 @@
             "description": "5fn",
             "manipulators": [
               {
-                "conditions": [
-                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
-                  {
-                    "bundle_identifiers": [
-                      "^com\\.jetbrains\\.rider$",
-                      "^com\\.jetbrains\\.rider-EAP$"
-                    ],
-                    "type": "frontmost_application_if"
-                  }
-                ],
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
                 "from": { "key_code": "5" },
                 "to": [
-                  { "key_code": "grave_accent_and_tilde", "modifiers": ["command"], "repeat": true }
-                ],
-                "type": "basic"
-              },
-              {
-                "conditions": [
-                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
                   {
-                    "bundle_identifiers": [
-                      "^com\\.jetbrains\\.rider$",
-                      "^com\\.jetbrains\\.rider-EAP$"
-                    ],
-                    "type": "frontmost_application_unless"
+                    "shell_command": "open -b com.tinyspeck.slackmacgap"
                   }
                 ],
-                "from": { "key_code": "5" },
-                "to": [{ "shell_command": "open -b com.jetbrains.rider || open -a 'Rider'" }],
                 "type": "basic"
               }
             ]
@@ -715,13 +693,35 @@
             "description": "7fn",
             "manipulators": [
               {
-                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
-                "from": { "key_code": "7" },
-                "to": [
+                "conditions": [
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
                   {
-                    "shell_command": "open -b com.tinyspeck.slackmacgap"
+                    "bundle_identifiers": [
+                      "^com\\.jetbrains\\.rider$",
+                      "^com\\.jetbrains\\.rider-EAP$"
+                    ],
+                    "type": "frontmost_application_if"
                   }
                 ],
+                "from": { "key_code": "7" },
+                "to": [
+                  { "key_code": "grave_accent_and_tilde", "modifiers": ["command"], "repeat": true }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  { "name": "spacefn_mode", "type": "variable_if", "value": 1 },
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.jetbrains\\.rider$",
+                      "^com\\.jetbrains\\.rider-EAP$"
+                    ],
+                    "type": "frontmost_application_unless"
+                  }
+                ],
+                "from": { "key_code": "7" },
+                "to": [{ "shell_command": "open -b com.jetbrains.rider || open -a 'Rider'" }],
                 "type": "basic"
               }
             ]

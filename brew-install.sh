@@ -18,6 +18,7 @@ echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
 # no need order for this applications
 brew install --cask karabiner-elements google-drive openvpn-connect adobe-acrobat-reader
 brew install --cask visual-studio-code google-chrome
+brew install --cask dbeaver-community
 brew install --cask postman
 brew install --cask font-meslo-for-powerlevel10k
 brew install --cask iterm2
