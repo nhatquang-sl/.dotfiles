@@ -49,6 +49,7 @@ source ${ZDOTDIR}/git-cmds/gckonew.zsh
 source ${ZDOTDIR}/git-cmds/gclone.zsh 
 source ${ZDOTDIR}/git-cmds/gdelete.zsh
 source ${ZDOTDIR}/git-cmds/gdeleteserver.zsh
+source ${ZDOTDIR}/git-cmds/gdiscardallchanges.zsh
 source ${ZDOTDIR}/git-cmds/gpull.zsh
 source ${ZDOTDIR}/git-cmds/gpush.zsh
 source ${ZDOTDIR}/git-cmds/gpushforce.zsh
@@ -61,7 +62,7 @@ export QNEDIR="D:/QN.Expenditure"
 if [[ $(uname) == "Darwin" ]]; then
     export QNEDIR="/Users/quang/workspace/QN.Expenditure"
 fi
-source ${QNEDIR}/scripts/.zshrc
+[[ -f "${QNEDIR}/scripts/.zshrc" ]] && source ${QNEDIR}/scripts/.zshrc
 
 
 export DOTNET_ROOT=$HOME/.dotnet
