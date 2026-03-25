@@ -872,7 +872,7 @@
                 "from": { "key_code": "6" },
                 "to": [
                   {
-                    "shell_command": "open -b org.telegram.desktop || open -b ru.keepcoder.Telegram || open -a 'Telegram' || open -a 'Telegram Desktop' || open -a 'Telegram Lite'"
+                    "shell_command": "open -b com.torusknot.SourceTreeNotMAS"
                   }
                 ],
                 "type": "basic"
