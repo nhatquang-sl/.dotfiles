@@ -56,7 +56,7 @@ source ${ZDOTDIR}/git-cmds/gpushforce.zsh
 source ${ZDOTDIR}/git-cmds/grename.zsh
 source ${ZDOTDIR}/git-cmds/gtagnew.zsh
 source ${ZDOTDIR}/git-cmds/gtagdelete.zsh
-
+source ~/.ssh/.zshrc
 
 export QNEDIR="D:/QN.Expenditure"
 if [[ $(uname) == "Darwin" ]]; then
