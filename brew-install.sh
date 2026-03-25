@@ -33,6 +33,7 @@ brew install --cask krisp
 brew install --cask obs
 brew install --cask openkey
 brew install docker docker-compose
+brew install --cask docker-desktop
 brew install colima
 brew install --cask mitmproxy
 
