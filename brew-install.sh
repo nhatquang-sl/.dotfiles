@@ -27,7 +27,8 @@ brew install --cask telegram
 brew install --cask slack
 brew install --cask rider
 brew install go
-
+brew install mongodb-atlas
+brew install shortcat
 brew install --cask elmedia-player
 brew install --cask krisp
 brew install --cask obs
