@@ -64,6 +64,7 @@ fi
 [[ -f "${QNEDIR}/scripts/.zshrc" ]] && source ${QNEDIR}/scripts/.zshrc
 
 
-export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+#sudo launchctl config user path "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$PATH:$HOME/.dotnet/tools"
+
