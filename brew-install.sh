@@ -35,3 +35,7 @@ brew install --cask obs
 brew install --cask openkey
 brew install --cask docker-desktop
 brew install --cask mitmproxy
+
+# Need for plantuml vscode extension
+brew install --cask temurin
+brew install graphviz
