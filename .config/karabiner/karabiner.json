@@ -1043,6 +1043,17 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "mfn",
+            "manipulators": [
+              {
+                "conditions": [{ "name": "spacefn_mode", "type": "variable_if", "value": 1 }],
+                "from": { "key_code": "m" },
+                "to": [{ "key_code": "h", "modifiers": ["command"] }],
+                "type": "basic"
+              }
+            ]
           }
         ]
       },
