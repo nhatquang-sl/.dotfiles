@@ -62,9 +62,9 @@ if [[ $(uname) == "Darwin" ]]; then
     export QNEDIR="/Users/quang/workspace/QN.Expenditure"
 fi
 [[ -f "${QNEDIR}/scripts/.zshrc" ]] && source ${QNEDIR}/scripts/.zshrc
+[[ -f "$QNEDIR/credentials/scripts/.zshrc" ]] && source "$QNEDIR/credentials/scripts/.zshrc"
 
 
 #sudo launchctl config user path "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$PATH:$HOME/.dotnet/tools"
-
